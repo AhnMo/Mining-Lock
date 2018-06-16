@@ -23,8 +23,10 @@ function onButtenClickedListner(notificationID, buttonIndex) {
 }
 
 function onMessageListener(request, sender, sendResponse) {
-	if(request.message == "MININGBLOCKER_DETECTED")
+	if(request.message == "MININGBLOCKER_DETECTED") {
+    chrome.tabs.sendMessage(sender.tab.id, {message: "AHNMO_DETECTED"}); // XXX: THIS
 		showNotification(sender.tab.id.toString());
+  }
 };
 
 function showNotification(tabID) {
@@ -36,7 +38,7 @@ function showNotification(tabID) {
    		buttons: [{ title: 'Kill'}, {title: 'Ignore'}],
    		iconUrl:'image/main_logo.png'
 	};
-	chrome.notifications.create(tabID, opt, function(id) {}); 
+	chrome.notifications.create(tabID, opt, function(id) {});
 }
 
 function sendMessage(tabID, text) {
