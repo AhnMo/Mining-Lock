@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "Mining-Blocker",
+  "version": "1.0.0",
+  "description": "Anti mining program",
+
+  "icons" : {
+    "48" : "image/main_logo.png"
+  },
+
+  "background" : {
+    "presistent" : true,
+    "scripts":[
+      "js/background.js"
+    ]
+  },
+
+  "content_scripts" : [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js" : ["js/content.js"],
+    "run_at" : "document_start",
+    "all_frames": true
+  }],
+
+  "web_accessible_resources": [
+	  "js/customworker.js",
+	  "js/wsHook.js",
+    "js/spc.js"
+  ],
+
+  "browser_action": {
+    "default_title": "Mining-Blocker",
+    "default_icon": "image/main_logo.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "unlimitedStorage",
+    "tabs",
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*",
+    "notifications"
+  ],
+
+  "author" : "Pigeon"
+}

@@ -1,0 +1,57 @@
+﻿@charset "utf-8";
+
+.header {
+  height: 80px;
+  color: gray;
+  font-family:"Segoe UI""맑은 고딕" "meiryo"
+  float:none;
+}
+.header-left {
+	font-size: 30px;
+}
+
+.topMenu {
+height: 30px;
+width: 600px;
+margin:0 auto;
+padding : 5px;
+}
+
+.topMeun ul {
+	width:600px; margin:0px auto; padding:0px;
+  text-align: center;
+}
+
+.topMenu ul li {
+	list-style: none;
+	color: black;
+	background-color: white;
+	float: left;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none
+
+}
+
+.topMenu .menuLink {
+	text-decoration:none;
+	color: black;
+	display: block;
+	width: 150px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Segoe UI""맑은 고딕" "meiryo"
+}
+.topMenu .menuLink:hover {
+color: white;
+background-color: #4d4d4d;
+}
+
+.contents {
+	height: 600px;
+	margin:5 auto;
+	text-align:center;
+
+	clear: both;
+}
