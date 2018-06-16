@@ -85,9 +85,9 @@ var wsHook = {};
 })()
 
 wsHook.before = function(data, url) {
-	sendMessage("MESSAGE_DETECTED", data);
+	console.log(data);
 }
 wsHook.after = function(messageEvent, url) {
-	sendMessage("MESSAGE_DETECTED", messageEvent.data);
+	console.log(messageEvent.data);
 	return messageEvent;
 }
