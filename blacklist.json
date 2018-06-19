@@ -1,0 +1,15 @@
+[
+  "*://coinhive.com/lib*",
+  "*://coinhive.com/captcha*",
+  "wss://*.coinhive.com/proxy*",
+  "*://jsecoin.com/server*",
+  "*://*.jsecoin.com/server*",
+  "*://server.jsecoin.com/*",
+  "*://*.server.jsecoin.com/*",
+  "*://load.jsecoin.com/*",
+  "*://*.load.jsecoin.com/*",
+  "*://*.pagez.kr/",
+  "*://*.pagez.kr/*",
+  "*://pagez.kr/",
+  "*://pagez.kr/*"
+]
