@@ -25,7 +25,7 @@ function getUserBlacklist() {
 
 
 function onBeforeRequesHandler(details) {
-  chrome.tabs.sendMessage(sender.tab.id, {message: "AHNMO_DETECTED"}); // XXX: THIS
+  chrome.tabs.sendMessage(details.tabId, {message: "AHNMO_DETECTED"}); // XXX: THIS
   if (isWhitelistByUser(domains[details.tabId])) {
     return {cancel: false};
   }
